@@ -165,7 +165,16 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>© 2026 Jesús Alexander | Mi Portafolio Profesional</p>
+  <p>© 2026 Jesús Alexander | Mi Portafolio Profesional</p>
+  <script>
+    const btnCorreo = document.getElementById("btn-correo");
+    const esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (!esMovil) {
+        btnCorreo.href = "https://mail.google.com/mail/?view=cm&fs=1&to=padillamembrenojesus@gmail.com";
+        btnCorreo.target = "_blank";
+        btnCorreo.rel = "noopener noreferrer";
+    }
+</script>
     </footer>
 
 </body>
